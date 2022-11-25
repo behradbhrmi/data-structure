@@ -1,2 +1,1 @@
-# data-structure
 # Maze Solver 
