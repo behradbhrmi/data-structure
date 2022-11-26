@@ -3,10 +3,10 @@ from os import system
 
 
 _map = [
-    [0, 1, 1, 0, 1],
+    [0, 1, 1, 1, 1],
     [1, 0, 1, 0, 0],
-    [1, 0, 1, 0, 0],
-    [1, 1, 0, 1, 0],
+    [1, 0, 1, 0, 1],
+    [1, 1, 0, 1, 1],
 ]
 path_stack = []
 col = len(_map) -1
@@ -48,7 +48,7 @@ def maze(y, x, finish_y, finish_x):
     maze(y+1, x-1, finish_y, finish_x)
 
     if found == True :
-        l= [finish_y, finish_x]
+        l = [finish_y, finish_x]
         if l not in path_stack:
             path_stack.append(l)
 
