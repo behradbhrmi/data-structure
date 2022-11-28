@@ -1,1 +1,1 @@
-# Maze Solver 
+Data Structure Practices
