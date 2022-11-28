@@ -34,7 +34,7 @@ def maze(y, x, finish_y, finish_x):
 
     path_stack.append([y, x])
 
-    if  y == finish_y :
+    if  y == finish_y and x == finish_x:
         found = True
         return 
     
