@@ -13,7 +13,6 @@ col = len(_map) -1
 row = len(_map[0]) -1
 found = False
 
-
 def maze(y, x, finish_y, finish_x):
     global found
     if finish_y > col or finish_x > row :
@@ -40,11 +39,9 @@ def maze(y, x, finish_y, finish_x):
     maze(y-1, x-1, finish_y, finish_x)
     maze(y+1, x-1, finish_y, finish_x)
 
-
 def printer(input_list):
     for row in input_list:
         print(*row)
-
 
 def correct_path_printer():
     new_list = dc(_map)
@@ -56,7 +53,6 @@ def correct_path_printer():
             new_list[j][i] = 0
     printer(new_list)
     return new_list
-
 
 def main():
     system('cls')
@@ -82,6 +78,5 @@ def main():
     else: print('> Could Not Reach Finishing Point :(')
 
        
-
 if __name__ == '__main__':
     main()
