@@ -1,14 +1,11 @@
 from os import system
 
-
 counter = 0
-
 
 def perm(_list, first, last):
     global counter
 
     if first == last:
-
         counter += 1
         return print(f"{counter}. {''.join(_list)}")
     
@@ -21,12 +18,10 @@ def perm(_list, first, last):
 def main():
     system('cls')
     print('=======(( Start ))=======')
-
     string = [x for x in input('> Enter Your Array : ')]
     first = 0 
     last  = len(string) - 1
     perm(string, first, last)
-
     print('=======(( Done ))=======')
 
 
