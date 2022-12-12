@@ -4,6 +4,8 @@
 # form of polynomial should be like -->> your_list = [ [coe0, exp0], [coe1, exp1], [coe2, exp2], ...]
 # the first value is coefficent [coe] and the second is exponent [exp]
 # [coe, epx]
+# as string input should be : '[sign0][coe0]x^[exp0] [sign1][coe1][var]^[exp1] ,... '
+# ex -->> input = '3x^2 -7x^4 +4x -21'
 # ===================================================================================================
 
 from os import system
